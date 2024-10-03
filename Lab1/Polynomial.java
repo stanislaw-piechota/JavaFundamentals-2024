@@ -1,5 +1,6 @@
 package Lab1;
 import java.lang.Math;
+import java.lang.ArithmeticException;
 
 public class Polynomial {
     private int A, B, C;
@@ -27,8 +28,7 @@ public class Polynomial {
     private void calculateDelta(){
         double deltaSquared = Math.pow(this.B, 2) - 4 * this.A * this.C;
         if (deltaSquared < 0) {
-            System.err.println("Delta^2 is negative, there are no roots");
-            throw new IllegalArgumentException();
+            throw new ArithmeticException("Delta^2 is negative, there are no roots");
         }
         this.delta = Math.sqrt(deltaSquared);
     }
@@ -39,8 +39,7 @@ public class Polynomial {
     
     public static void main(String[] args){
         if (args.length != 3) {
-            System.err.println("Only 3 arguments!");
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("You must specify only 3 arguments");
         }
 
         Polynomial squareEquation = new Polynomial(args);
