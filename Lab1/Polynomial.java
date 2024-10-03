@@ -1,6 +1,7 @@
+package Lab1;
 import java.lang.Math;
 
-class Polynomial {
+public class Polynomial {
     private int A, B, C;
     private double delta;
     
