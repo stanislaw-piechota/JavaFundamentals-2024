@@ -35,9 +35,9 @@ public class ShoppingListApp {
                 "Enter category number",
                 1, this.shoppingList.getCategories().size()) - 1);
         this.shoppingList.printItems(category);
-        item = this.productList.getItems(category).get(StreamOperator.readInt(
+        item = this.shoppingList.getItems(category).get(StreamOperator.readInt(
                 "Enter product number",
-                1, this.productList.getItems(category).size()) - 1);
+                1, this.shoppingList.getItems(category).size()) - 1);
         this.shoppingList.removeItem(category, item);
         System.out.println("Item " + item + " (" + category + ") was removed from your shopping List");
     }
