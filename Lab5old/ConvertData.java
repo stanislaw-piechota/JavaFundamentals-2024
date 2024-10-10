@@ -1,4 +1,4 @@
-package Lab5;
+package Lab5old;
 
 import java.io.File;
 import java.io.FileWriter;
