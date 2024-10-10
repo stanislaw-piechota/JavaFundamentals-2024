@@ -1,3 +1,4 @@
 **/*.class
 .vscode
 Lab5/MyData.txt
+**/target

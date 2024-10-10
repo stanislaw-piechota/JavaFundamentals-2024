@@ -1,0 +1,9 @@
+#!/bin/bash
+mvn assembly:assembly
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo ""
+    echo ""
+    java -jar target/sql-parser-*-jar-with-dependencies.jar
+fi
