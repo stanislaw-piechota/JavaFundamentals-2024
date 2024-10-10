@@ -1,5 +1,4 @@
 package Lab6;
-import Lab6.TelephoneNumber;
 
 public class Company extends TelephoneEntry {
     private String name;

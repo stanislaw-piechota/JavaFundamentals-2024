@@ -57,7 +57,3 @@ public class TelephoneNumber implements Comparable<TelephoneNumber> {
         return new TelephoneNumber(code, local);
     }
 }
-
-abstract class TelephoneEntry{
-    abstract String description();
-}
